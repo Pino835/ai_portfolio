@@ -1,0 +1,25 @@
+.proyectos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/proyectos.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 5px;
+}
+
+.proyectoContent {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+.proyectoTitle {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.proyectoDescript {
+    font-size: 1.5rem;
+}
