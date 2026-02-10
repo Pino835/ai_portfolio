@@ -1,25 +1,192 @@
 .contacto {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/contacto.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/contacto.png');
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    padding-top: 5px;
+    min-height: 100vh;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.contactoContent {
-    margin: 0 auto;
+.contactoHeader {
     text-align: center;
     color: white;
-    position: relative;
-    top: 30%;
-    transform: translateY(-50%);
+    margin-bottom: 50px;
 }
 
 .contactoTitle {
-    font-size: 5rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .contactoDescript {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+.formularioContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.formulario {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.filaFormulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.grupoFormulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.grupoFormulario label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.grupoFormulario input,
+.grupoFormulario select,
+.grupoFormulario textarea {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grupoFormulario input:focus,
+.grupoFormulario select:focus,
+.grupoFormulario textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.grupoFormulario input::placeholder,
+.grupoFormulario textarea::placeholder {
+    color: #999;
+}
+
+.grupoFormulario textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.botonEnviar {
+    width: 100%;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.botonEnviar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(74, 144, 226, 0.3);
+}
+
+.botonEnviar:active {
+    transform: translateY(0);
+}
+
+.mensajeExito {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 60px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: slideIn 0.5s ease;
+}
+
+.mensajeExito h2 {
+    font-size: 2rem;
+    color: #27ae60;
+    margin: 0 0 20px 0;
+}
+
+.mensajeExito p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contacto {
+        padding: 40px 20px;
+    }
+
+    .contactoTitle {
+        font-size: 2.5rem;
+    }
+
+    .filaFormulario {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .formulario {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contacto {
+        padding: 30px 15px;
+    }
+
+    .contactoTitle {
+        font-size: 2rem;
+    }
+
+    .contactoDescript {
+        font-size: 1rem;
+    }
+
+    .formulario {
+        padding: 20px 15px;
+    }
+
+    .grupoFormulario label {
+        font-size: 0.85rem;
+    }
+
+    .botonEnviar {
+        font-size: 1rem;
+    }
 }

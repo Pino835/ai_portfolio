@@ -10,8 +10,8 @@ export default function App() {
     <>
       <Navbar />
       <Hero />
-      <Proyectos />
       <Servicios />
+      <Proyectos />
       <Contacto />
       <Footer />
     </>

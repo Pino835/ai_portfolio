@@ -9,8 +9,8 @@ export default function Navbar() {
         <nav>
           <ul className={styles.navList}>
             <li><a className={styles.navLink} href="#inicio">Inicio</a></li>
-            <li><a className={styles.navLink} href="#proyectos">Proyectos</a></li>
             <li><a className={styles.navLink} href="#servicios">Servicios</a></li>
+            <li><a className={styles.navLink} href="#proyectos">Proyectos</a></li>
             <li><a className={styles.navLink} href="#contacto">Contacto</a></li>
           </ul>
         </nav>

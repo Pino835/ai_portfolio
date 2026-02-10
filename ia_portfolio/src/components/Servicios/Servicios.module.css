@@ -1,25 +1,134 @@
 .servicios {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/servicios.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../assets/servicios.png');
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    padding-top: 5px;
+    min-height: 100vh;
+    padding: 60px 40px;
 }
 
-.servicioContent {
+.servicioHeader {
     margin: 0 auto;
     text-align: center;
     color: white;
-    position: relative;
-    top: 30%;
-    transform: translateY(-50%);
+    margin-bottom: 60px;
 }
 
 .servicioTitle {
-    font-size: 5rem;
+    font-size: 3.5rem;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .servicioDescript {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+.gridServicios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.servicioCard {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.servicioCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.servicioImagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.servicioCardContent {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.servicioCardTitulo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.servicioCardDescripcion {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 18px;
+    margin-top: 0;
+}
+
+.servicioCaracteristicas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.servicioCaracteristicas li {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.servicioCaracteristicas li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive - 3 columnas en tablet */
+@media (max-width: 1024px) {
+    .gridServicios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Responsive - 2 columnas en móvil grande */
+@media (max-width: 768px) {
+    .gridServicios {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .servicioTitle {
+        font-size: 2.5rem;
+    }
+}
+
+/* Responsive - 1 columna en móvil pequeño */
+@media (max-width: 480px) {
+    .gridServicios {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .servicios {
+        padding: 30px 15px;
+    }
+    
+    .servicioTitle {
+        font-size: 2rem;
+    }
+    
+    .servicioDescript {
+        font-size: 1rem;
+    }
 }
