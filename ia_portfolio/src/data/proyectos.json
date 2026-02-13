@@ -1,0 +1,145 @@
+{
+  "secciones": [
+    {
+      "id": "imagenes",
+      "titulo": "Imágenes",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "Generador de Contenido IA",
+          "descripcion": "Automatiza la creación de contenido para redes sociales con inteligencia artificial",
+          "media": "imagen1",
+          "mediaType": "image"
+        },
+        {
+          "id": 2,
+          "titulo": "Generador de Contenido IA",
+          "descripcion": "Automatiza la creación de contenido para redes sociales con inteligencia artificial",
+          "media": "imagen2",
+          "mediaType": "image"
+        },
+        {
+          "id": 3,
+          "titulo": "Análisis de Datos IA",
+          "descripcion": "Extrae insights valiosos de tus datos empresariales con machine learning",
+          "media": "imagen3",
+          "mediaType": "image"
+        },
+        {
+          "id": 4,
+          "titulo": "Optimización de Procesos",
+          "descripcion": "Automatiza procesos empresariales para aumentar eficiencia",
+          "media": "imagen4",
+          "mediaType": "image"
+        },
+        {
+          "id": 5,
+          "titulo": "Marketing Automatizado",
+          "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+          "media": "imagen5",
+          "mediaType": "image"
+        },
+        {
+          "id": 6,
+          "titulo": "Marketing Automatizado",
+          "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+          "media": "imagen6",
+          "mediaType": "image"
+        }
+      ]
+    },
+    {
+      "id": "videos",
+      "titulo": "Videos",
+      "items": [
+          {
+            "id": 1,
+            "titulo": "Marketing Automatizado",
+            "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+            "media": "video1",
+            "mediaType": "video"
+          },
+          {
+            "id": 2,
+            "titulo": "Marketing Automatizado",
+            "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+            "media": "video2",
+            "mediaType": "video"
+          },
+          {
+            "id": 3,
+            "titulo": "Marketing Automatizado",
+            "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+            "media": "video3",
+            "mediaType": "video"
+          },
+          {
+            "id": 4,
+            "titulo": "Marketing Automatizado",
+            "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+            "media": "video4",
+            "mediaType": "video"
+          },
+          {
+            "id": 5,
+            "titulo": "Marketing Automatizado",
+            "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+            "media": "video5",
+            "mediaType": "video"
+          },
+          {
+            "id": 6,
+            "titulo": "Marketing Automatizado",
+            "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+            "media": "video6",
+            "mediaType": "video"
+          }
+      ]
+    },
+    {
+      "id": "chatbots",
+      "titulo": "Chatbots",
+      "items": [
+        {
+          "id": 6,
+          "titulo": "Chatbot para Pymes",
+          "descripcion": "Asistente conversacional inteligente para atender clientes 24/7",
+          "media": "imagen2",
+          "mediaType": "chatbot"
+        }
+      ]
+    },
+    {
+      "id": "audios",
+      "titulo": "Audios",
+      "items": []
+    },
+    {
+      "id": "otros",
+      "titulo": "Otras herramientas",
+      "items": [
+        {
+          "id": 7,
+          "titulo": "Predicción de Ventas",
+          "descripcion": "Modelos predictivos para forecasting de ventas y demanda",
+          "media": "https://upload.wikimedia.org/wikipedia/commons/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png",
+          "mediaType": "image"
+        },
+        {
+          "id": 8,
+          "titulo": "Detección de Fraudes",
+          "descripcion": "Sistema inteligente para identificar y prevenir fraudes",
+          "media": "https://upload.wikimedia.org/wikipedia/commons/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png",
+          "mediaType": "image"
+        },
+        {
+          "id": 9,
+          "titulo": "Segmentación de Clientes",
+          "descripcion": "Agrupa clientes automáticamente para estrategias personalizadas",
+          "media": "https://upload.wikimedia.org/wikipedia/commons/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png",
+          "mediaType": "image"
+        }
+      ]
+    }
+  ]
+}

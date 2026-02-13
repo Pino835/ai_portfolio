@@ -1,60 +1,31 @@
 import styles from "./Proyectos.module.css";
-import imagen1 from "../../assets/proyectos/arboles1.jpeg";
-import imagen2 from "../../assets/proyectos/arboles2.jpeg";
-import imagen3 from "../../assets/proyectos/paisaje1.jpeg";
-import imagen4 from "../../assets/proyectos/paisaje2.jpeg";
+
+// Imágenes de ejemplo para los proyectos
+import imagen1 from "../../assets/images/imagen1.jpeg";
+import imagen2 from "../../assets/images/imagen2.jpeg";
+import imagen3 from "../../assets/images/imagen3.jpeg";
+import imagen4 from "../../assets/images/imagen4.jpeg";
+import imagen5 from "../../assets/images/imagen5.png";
+import imagen6 from "../../assets/images/imagen6.png";
+
+// Videos de ejemplo para los proyectos
+import video1 from "../../assets/videos/video1.mp4";
+import video2 from "../../assets/videos/video2.mp4";
+import video3 from "../../assets/videos/video3.mp4";
+import video4 from "../../assets/videos/video4.mp4";
+import video5 from "../../assets/videos/video5.mp4";
+import video6 from "../../assets/videos/video6.mp4";
+
+// Datos externos (JSON)
+import proyectosData from "../../data/proyectos.json";
 
 export default function Proyectos() {
-  const proyectos = [
-    {
-      id: 1,
-      titulo: "Generador de Contenido IA",
-      descripcion: "Automatiza la creación de contenido para redes sociales con inteligencia artificial",
-      imagen: imagen1
-    },
-    {
-      id: 2,
-      titulo: "Chatbot para Pymes",
-      descripcion: "Asistente conversacional inteligente para atender clientes 24/7",
-      imagen: imagen2
-    },
-    {
-      id: 3,
-      titulo: "Análisis de Datos IA",
-      descripcion: "Extrae insights valiosos de tus datos empresariales con machine learning",
-      imagen: imagen3
-    },
-    {
-      id: 4,
-      titulo: "Optimización de Procesos",
-      descripcion: "Automatiza procesos empresariales para aumentar eficiencia",
-      imagen: imagen4
-    },
-    {
-      id: 5,
-      titulo: "Marketing Automatizado",
-      descripcion: "Campañas de marketing personalizadas impulsadas por IA",
-      imagen: "https://upload.wikimedia.org/wikipedia/commons/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png"
-    },
-    {
-      id: 6,
-      titulo: "Predicción de Ventas",
-      descripcion: "Modelos predictivos para forecasting de ventas y demanda",
-      imagen: "https://upload.wikimedia.org/wikipedia/commons/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png"
-    },
-    {
-      id: 7,
-      titulo: "Detección de Fraudes",
-      descripcion: "Sistema inteligente para identificar y prevenir fraudes",
-      imagen: "https://upload.wikimedia.org/wikipedia/commons/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png"
-    },
-    {
-      id: 8,
-      titulo: "Segmentación de Clientes",
-      descripcion: "Agrupa clientes automáticamente para estrategias personalizadas",
-      imagen: "https://upload.wikimedia.org/wikipedia/commons/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png"
-    }
-  ];
+  const secciones = proyectosData.secciones || [];
+
+  const mediaMap = {
+    imagen1, imagen2, imagen3, imagen4, imagen5, imagen6,
+    video1, video2, video3, video4, video5, video6
+  };
 
   return (
     <section id="proyectos" className={styles.proyectos}>
@@ -63,17 +34,38 @@ export default function Proyectos() {
         <p className={styles.proyectoDescript}>Automatización y contenido con IA para pymes.</p>
       </div>
 
-      <div className={styles.gridProyectos}>
-        {proyectos.map((proyecto) => (
-          <div key={proyecto.id} className={styles.card}>
-            <img src={proyecto.imagen} alt={proyecto.titulo} className={styles.cardImagen} />
-            <div className={styles.cardContent}>
-              <h3 className={styles.cardTitulo}>{proyecto.titulo}</h3>
-              <p className={styles.cardDescripcion}>{proyecto.descripcion}</p>
+      {secciones.map((seccion) => (
+        <div key={seccion.id} className={styles.sectionWrapper}>
+          <h2 className={styles.sectionTitle}>{seccion.titulo}</h2>
+          {seccion.items.length === 0 ? (
+            <p className={styles.emptyMsg}>Próximamente...</p>
+          ) : (
+            <div className={styles.gridProyectos}>
+              {seccion.items.map((proyecto) => (
+                <div key={proyecto.id} className={styles.card}>
+                  {(() => {
+                    const mediaField = proyecto.media || "";
+                    const mediaSrc =
+                      typeof mediaField === "string" && mediaField.startsWith("http")
+                        ? mediaField
+                        : mediaMap[mediaField] || mediaField;
+
+                    if (proyecto.mediaType === "video") {
+                      return <video src={mediaSrc} className={styles.cardImagen} controls />;
+                    }
+
+                    return <img src={mediaSrc} alt={proyecto.titulo} className={styles.cardImagen} />;
+                  })()}
+                  <div className={styles.cardContent}>
+                    <h3 className={styles.cardTitulo}>{proyecto.titulo}</h3>
+                    <p className={styles.cardDescripcion}>{proyecto.descripcion}</p>
+                  </div>
+                </div>
+              ))}
             </div>
-          </div>
-        ))}
-      </div>
+          )}
+        </div>
+      ))}
     </section>
   );
 }
