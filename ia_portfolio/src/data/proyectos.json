@@ -45,6 +45,34 @@
           "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
           "media": "imagen6",
           "mediaType": "image"
+        },
+        {
+          "id": 7,
+          "titulo": "Marketing Automatizado",
+          "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+          "media": "imagen7",
+          "mediaType": "image"
+        },
+        {
+          "id": 8,
+          "titulo": "Marketing Automatizado",
+          "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+          "media": "imagen8",
+          "mediaType": "image"
+        },
+        {
+          "id": 9,
+          "titulo": "Marketing Automatizado",
+          "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+          "media": "imagen9",
+          "mediaType": "image"
+        },
+        {
+          "id": 10,
+          "titulo": "Marketing Automatizado",
+          "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+          "media": "imagen10",
+          "mediaType": "image"
         }
       ]
     },
@@ -93,7 +121,48 @@
             "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
             "media": "video6",
             "mediaType": "video"
+          },
+          {
+            "id": 7,
+            "titulo": "Marketing Automatizado",
+            "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+            "media": "video7",
+            "mediaType": "video"
           }
+      ]
+    },
+    {
+      "id": "audios",
+      "titulo": "Audios",
+      "items": [
+        {
+          "id": 1,
+          "titulo": "Chatbot para Pymes",
+          "descripcion": "Asistente conversacional inteligente para atender clientes 24/7",
+          "media": "audio1",
+          "mediaType": "audio"
+        },
+        {
+          "id": 2,
+          "titulo": "Chatbot para Pymes",
+          "descripcion": "Asistente conversacional inteligente para atender clientes 24/7",
+          "media": "audio2",
+          "mediaType": "audio"
+        },
+        {
+          "id": 3,
+          "titulo": "Chatbot para Pymes",
+          "descripcion": "Asistente conversacional inteligente para atender clientes 24/7",
+          "media": "audio3",
+          "mediaType": "audio"
+        },
+        {
+          "id": 4,
+          "titulo": "Chatbot para Pymes",
+          "descripcion": "Asistente conversacional inteligente para atender clientes 24/7",
+          "media": "audio4",
+          "mediaType": "audio"
+        }
       ]
     },
     {
@@ -101,45 +170,18 @@
       "titulo": "Chatbots",
       "items": [
         {
-          "id": 6,
+          "id": 1,
           "titulo": "Chatbot para Pymes",
           "descripcion": "Asistente conversacional inteligente para atender clientes 24/7",
-          "media": "imagen2",
-          "mediaType": "chatbot"
+          "media": "chatbot1",
+          "mediaType": "image"
         }
       ]
-    },
-    {
-      "id": "audios",
-      "titulo": "Audios",
-      "items": []
     },
     {
       "id": "otros",
       "titulo": "Otras herramientas",
-      "items": [
-        {
-          "id": 7,
-          "titulo": "Predicción de Ventas",
-          "descripcion": "Modelos predictivos para forecasting de ventas y demanda",
-          "media": "https://upload.wikimedia.org/wikipedia/commons/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png",
-          "mediaType": "image"
-        },
-        {
-          "id": 8,
-          "titulo": "Detección de Fraudes",
-          "descripcion": "Sistema inteligente para identificar y prevenir fraudes",
-          "media": "https://upload.wikimedia.org/wikipedia/commons/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png",
-          "mediaType": "image"
-        },
-        {
-          "id": 9,
-          "titulo": "Segmentación de Clientes",
-          "descripcion": "Agrupa clientes automáticamente para estrategias personalizadas",
-          "media": "https://upload.wikimedia.org/wikipedia/commons/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png",
-          "mediaType": "image"
-        }
-      ]
+      "items": []
     }
   ]
 }
