@@ -6,72 +6,135 @@
       "items": [
         {
           "id": 1,
-          "titulo": "Generador de Contenido IA",
-          "descripcion": "Automatiza la creación de contenido para redes sociales con inteligencia artificial",
+          "titulo": "Paisaje #1",
+          "descripcion": "Una hermosa vista de un paisaje natural con bosque",
           "media": "imagen1",
           "mediaType": "image"
         },
         {
           "id": 2,
-          "titulo": "Generador de Contenido IA",
-          "descripcion": "Automatiza la creación de contenido para redes sociales con inteligencia artificial",
+          "titulo": "Paisaje #2",
+          "descripcion": "Una vista panorámica de un paisaje natural con bosque",
           "media": "imagen2",
           "mediaType": "image"
         },
         {
           "id": 3,
-          "titulo": "Análisis de Datos IA",
-          "descripcion": "Extrae insights valiosos de tus datos empresariales con machine learning",
+          "titulo": "Paisaje #3",
+          "descripcion": "Una vista de un paisaje natural con montañas",
           "media": "imagen3",
           "mediaType": "image"
         },
         {
           "id": 4,
-          "titulo": "Optimización de Procesos",
-          "descripcion": "Automatiza procesos empresariales para aumentar eficiencia",
+          "titulo": "Paisaje #4",
+          "descripcion": "Una vista de un paisaje natural con montañas",
           "media": "imagen4",
           "mediaType": "image"
         },
         {
           "id": 5,
-          "titulo": "Marketing Automatizado",
-          "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+          "titulo": "Perrito y una moto",
+          "descripcion": "Una imagen de un perrito en una moto en un entorno natural",
           "media": "imagen5",
           "mediaType": "image"
         },
         {
           "id": 6,
-          "titulo": "Marketing Automatizado",
-          "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+          "titulo": "Imagen de marketing",
+          "descripcion": "Una imagen relacionada con marketing digital y estrategias de IA",
           "media": "imagen6",
           "mediaType": "image"
         },
         {
           "id": 7,
-          "titulo": "Marketing Automatizado",
-          "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+          "titulo": "Imagen cyberpunk #1",
+          "descripcion": "Una imagen de estilo cyberpunk relacionada con IA",
           "media": "imagen7",
           "mediaType": "image"
         },
         {
           "id": 8,
-          "titulo": "Marketing Automatizado",
-          "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+          "titulo": "Imagen cyberpunk #2",
+          "descripcion": "Una imagen de estilo cyberpunk relacionada con IA",
           "media": "imagen8",
           "mediaType": "image"
         },
         {
           "id": 9,
-          "titulo": "Marketing Automatizado",
-          "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+          "titulo": "Imagen cyberpunk #3",
+          "descripcion": "Una imagen de estilo cyberpunk relacionada con IA",
           "media": "imagen9",
           "mediaType": "image"
         },
         {
           "id": 10,
-          "titulo": "Marketing Automatizado",
-          "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+          "titulo": "Imagen cyberpunk #4",
+          "descripcion": "Una imagen de estilo cyberpunk relacionada con IA",
           "media": "imagen10",
+          "mediaType": "image"
+        },
+        {
+          "id": 11,
+          "titulo": "Motocicleta 3d",
+          "descripcion": "Una imagen de una motocicleta 3D generada por IA",
+          "media": "imagen11",
+          "mediaType": "image"
+        },
+        {
+          "id": 12,
+          "titulo": "Logo de motocicleta",
+          "descripcion": "Un logo de motocicleta generado por IA",
+          "media": "imagen12",
+          "mediaType": "image"
+        },
+        {
+          "id": 13,
+          "titulo": "Oficinista",
+          "descripcion": "Una imagen de un oficinista, generada por IA",
+          "media": "imagen13",
+          "mediaType": "image"
+        },
+        {
+          "id": 14,
+          "titulo": "Frase motivacional",
+          "descripcion": "Una imagen de una frase motivacional generada por IA",
+          "media": "imagen14",
+          "mediaType": "image"
+        },
+        {
+          "id": 15,
+          "titulo": "Modelo foto realista #1",
+          "descripcion": "Una imagen de un modelo foto realista generado por IA",
+          "media": "imagen15",
+          "mediaType": "image"
+        },
+        {
+          "id": 16,
+          "titulo": "Modelo foto realista #2",
+          "descripcion": "Una imagen de un modelo foto realista generado por IA",
+          "media": "imagen16",
+          "mediaType": "image"
+        },
+        {
+          "id": 17,
+          "titulo": "Modelo foto realista #3",
+          "descripcion": "Una imagen de un modelo foto realista generado por IA",
+          "media": "imagen17",
+          "mediaType": "image"
+        },
+        {
+          "id": 18,
+          "titulo": "Hombre muppet #1",
+          "descripcion": "Una imagen de un hombre muppet generado por IA",
+          "media": "imagen18",
+          "mediaType": "image"
+        },
+        {
+          "id": 19,
+          "titulo": "Hombre muppet #2",
+          "descripcion": "Una imagen de un hombre muppet generado por IA",
+          "media": "imagen19",
           "mediaType": "image"
         }
       ]
@@ -82,51 +145,65 @@
       "items": [
           {
             "id": 1,
-            "titulo": "Marketing Automatizado",
-            "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+            "titulo": "Anuncio de IA para Marketing",
+            "descripcion": "Un video promocional que muestra cómo la IA puede transformar las estrategias de marketing digital",
             "media": "video1",
             "mediaType": "video"
           },
           {
             "id": 2,
-            "titulo": "Marketing Automatizado",
-            "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+            "titulo": "Mujer con helado",
+            "descripcion": "Un video de una mujer con helado en la playa",
             "media": "video2",
             "mediaType": "video"
           },
           {
             "id": 3,
-            "titulo": "Marketing Automatizado",
-            "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+            "titulo": "Mujer en bicicleta",
+            "descripcion": "Un video de una mujer en bicicleta en un entorno natural",
             "media": "video3",
             "mediaType": "video"
           },
           {
             "id": 4,
-            "titulo": "Marketing Automatizado",
-            "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+            "titulo": "Auto en movimiento",
+            "descripcion": "Un video de un auto en movimiento en un entorno natural",
             "media": "video4",
             "mediaType": "video"
           },
           {
             "id": 5,
-            "titulo": "Marketing Automatizado",
-            "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+            "titulo": "Mujer en el desierto",
+            "descripcion": "Un video de una modelo en un entorno desértico",
             "media": "video5",
             "mediaType": "video"
           },
           {
             "id": 6,
-            "titulo": "Marketing Automatizado",
-            "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+            "titulo": "Modelo en el desierto",
+            "descripcion": "Un video de una modelo en un entorno desértico con un vestido negro",
             "media": "video6",
             "mediaType": "video"
           },
           {
             "id": 7,
-            "titulo": "Marketing Automatizado",
-            "descripcion": "Campañas de marketing personalizadas impulsadas por IA",
+            "titulo": "Mi avatar de IA",
+            "descripcion": "Un video de un avatar de IA personalizado",
             "media": "video7",
+            "mediaType": "video"
+          },
+          {
+            "id": 8,
+            "titulo": "Moldeando galletas",
+            "descripcion": "Un video de una persona moldeando galletas, generado por IA",
+            "media": "video8",
+            "mediaType": "video"
+          },
+          {
+            "id": 9,
+            "titulo": "Masa de las galletas",
+            "descripcion": "Un video de la masa de las galletas, generado por IA",
+            "media": "video9",
             "mediaType": "video"
           }
       ]
@@ -137,29 +214,29 @@
       "items": [
         {
           "id": 1,
-          "titulo": "Chatbot para Pymes",
-          "descripcion": "Asistente conversacional inteligente para atender clientes 24/7",
+          "titulo": "Musica #1",
+          "descripcion": "Una pista musical generada por IA con un estilo relajante y ambiental",
           "media": "audio1",
           "mediaType": "audio"
         },
         {
           "id": 2,
-          "titulo": "Chatbot para Pymes",
-          "descripcion": "Asistente conversacional inteligente para atender clientes 24/7",
+          "titulo": "Musica #2",
+          "descripcion": "Una pista musical generada por IA con un estilo dinámico y emocional",
           "media": "audio2",
           "mediaType": "audio"
         },
         {
           "id": 3,
-          "titulo": "Chatbot para Pymes",
-          "descripcion": "Asistente conversacional inteligente para atender clientes 24/7",
+          "titulo": "Musica #3",
+          "descripcion": "Una pista musical con temática de IA",
           "media": "audio3",
           "mediaType": "audio"
         },
         {
           "id": 4,
-          "titulo": "Chatbot para Pymes",
-          "descripcion": "Asistente conversacional inteligente para atender clientes 24/7",
+          "titulo": "Musica #4",
+          "descripcion": "Una pista musical con temática de IA",
           "media": "audio4",
           "mediaType": "audio"
         }
@@ -171,7 +248,7 @@
       "items": [
         {
           "id": 1,
-          "titulo": "Chatbot para Pymes",
+          "titulo": "Chatbot de atención al cliente",
           "descripcion": "Asistente conversacional inteligente para atender clientes 24/7",
           "media": "chatbot1",
           "mediaType": "image"
@@ -181,7 +258,15 @@
     {
       "id": "otros",
       "titulo": "Otras herramientas",
-      "items": []
+      "items": [
+        {
+          "id": 1,
+          "titulo": "Agente GPT para búsqueda de empleo",
+          "descripcion": "Asistente conversacional inteligente para búsqueda de empleo, que ayuda a los usuarios a encontrar oportunidades laborales y preparar sus solicitudes",
+          "media": "tool1",
+          "mediaType": "image"
+        }
+      ]
     }
   ]
 }
