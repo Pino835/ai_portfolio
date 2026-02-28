@@ -1,7 +1,8 @@
 import styles from './Contacto.module.css';
 import { useState } from 'react';
+import emailjs from 'emailjs-com';
 
-export default function Contacto() {
+export default function ContactoEmailJSEnv() {
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',
@@ -14,6 +15,8 @@ export default function Contacto() {
   });
 
   const [enviado, setEnviado] = useState(false);
+  const [errorEnvio, setErrorEnvio] = useState(false);
+  const [cargando, setCargando] = useState(false);
 
   const servicios = [
     'Selecciona un servicio',
@@ -36,22 +39,37 @@ export default function Contacto() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // Validar campos requeridos
+    setErrorEnvio(false);
+
     if (!formData.nombre || !formData.email || !formData.telefono || !formData.servicio || formData.servicio === 'Selecciona un servicio' || !formData.mensaje) {
       alert('Por favor completa todos los campos requeridos');
       return;
     }
 
-    // Aquí puedes agregar lógica para enviar el email
-    console.log('Datos del formulario:', formData);
-    
-    // Simular envío exitoso
-    setEnviado(true);
-    setTimeout(() => {
-      setEnviado(false);
+    // Leer las credenciales de EmailJS desde las variables de entorno
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    // Validar que las credenciales estén presentes
+    if (!serviceID || !templateID || !publicKey) {
+        console.error('Error: Las credenciales de EmailJS no están configuradas en el archivo .env');
+        alert('Error de configuración del servidor. No se puede enviar el mensaje.');
+        return;
+    }
+
+    setCargando(true);
+
+    try {
+      await emailjs.sendForm(
+        serviceID,
+        templateID,
+        e.target,
+        publicKey
+      );
+      setEnviado(true);
       setFormData({
         nombre: '',
         email: '',
@@ -62,7 +80,14 @@ export default function Contacto() {
         mensaje: '',
         contactoPor: 'email'
       });
-    }, 3000);
+      setTimeout(() => setEnviado(false), 5000);
+    } catch (error) {
+      console.error('Error al enviar el formulario:', error);
+      setErrorEnvio(true);
+      setTimeout(() => setErrorEnvio(false), 5000);
+    } finally {
+      setCargando(false);
+    }
   };
 
   return (
@@ -78,8 +103,14 @@ export default function Contacto() {
             <h2>¡Gracias por tu mensaje!</h2>
             <p>Nos pondremos en contacto contigo pronto.</p>
           </div>
+        ) : errorEnvio ? (
+          <div className={styles.mensajeError}>
+            <h2>¡Error al enviar!</h2>
+            <p>Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.</p>
+          </div>
         ) : (
           <form onSubmit={handleSubmit} className={styles.formulario}>
+            {/* El resto del formulario sigue igual */}
             <div className={styles.filaFormulario}>
               <div className={styles.grupoFormulario}>
                 <label htmlFor="nombre">Nombre *</label>
@@ -190,8 +221,8 @@ export default function Contacto() {
               />
             </div>
 
-            <button type="submit" className={styles.botonEnviar}>
-              Enviar Mensaje
+            <button type="submit" className={styles.botonEnviar} disabled={cargando}>
+              {cargando ? 'Enviando...' : 'Enviar Mensaje'}
             </button>
           </form>
         )}
