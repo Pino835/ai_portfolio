@@ -38,6 +38,7 @@ import audio1 from "../../assets/audios/audio1.mp3";
 import audio2 from "../../assets/audios/audio2.mp3";
 import audio3 from "../../assets/audios/audio3.mp3";
 import audio4 from "../../assets/audios/audio4.mp3";
+import audio5 from "../../assets/audios/audio5.mp3";
 
 // Chatbot de ejemplo para los proyectos
 import chatbot1 from "../../assets/chatbots/chatbot1.png";
@@ -56,7 +57,7 @@ export default function Proyectos() {
     imagen11, imagen12, imagen13, imagen14, imagen15,
     imagen16, imagen17, imagen18, imagen19,
     video1, video2, video3, video4, video5, video6, video7, video8, video9,
-    audio1, audio2, audio3, audio4,
+    audio1, audio2, audio3, audio4, audio5,
     chatbot1,
     tool1
   };
