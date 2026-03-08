@@ -40,3 +40,59 @@
   opacity: 1;
   text-decoration: underline;
 }
+
+/* hamburger icon (hidden on desktop) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #fff;
+}
+
+/* responsive behavior */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navList {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background: #0b1220;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 10;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+  }
+
+  .navList.open {
+    display: flex;
+  }
+
+  .navLink {
+    padding: 12px 16px;
+  }
+}
+
+/* optional adjustment for tablet/laptop widths */
+@media (max-width: 1024px) {
+  .brand {
+    font-size: 26px;
+  }
+}
+

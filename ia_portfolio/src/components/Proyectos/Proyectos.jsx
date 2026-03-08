@@ -32,6 +32,8 @@ import video6 from "../../assets/videos/video6.mp4";
 import video7 from "../../assets/videos/video7.mp4";
 import video8 from "../../assets/videos/video8.mp4";
 import video9 from "../../assets/videos/video9.mp4";
+import video10 from "../../assets/videos/video10.mp4";
+import video11 from "../../assets/videos/video11.mp4";
 
 // Audios de ejemplo para los proyectos
 import audio1 from "../../assets/audios/audio1.mp3";
@@ -56,7 +58,8 @@ export default function Proyectos() {
     imagen6, imagen7, imagen8, imagen9, imagen10, 
     imagen11, imagen12, imagen13, imagen14, imagen15,
     imagen16, imagen17, imagen18, imagen19,
-    video1, video2, video3, video4, video5, video6, video7, video8, video9,
+    video1, video2, video3, video4, video5, video6, video7, video8, video9, video10,
+    video11,
     audio1, audio2, audio3, audio4, audio5,
     chatbot1,
     tool1

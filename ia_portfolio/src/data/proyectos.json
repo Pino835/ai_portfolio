@@ -205,6 +205,20 @@
             "descripcion": "Un video de la masa de las galletas, generado por IA",
             "media": "video9",
             "mediaType": "video"
+          },
+          {
+            "id": 10,
+            "titulo": "Producto de barbería #1",
+            "descripcion": "Un video de un producto de barbería, generado por IA",
+            "media": "video10",
+            "mediaType": "video"
+          },
+          {
+            "id": 11,
+            "titulo": "Producto de barbería #2",
+            "descripcion": "Un video de un producto de barbería, generado por IA",
+            "media": "video11",
+            "mediaType": "video"
           }
       ]
     },
@@ -242,8 +256,8 @@
         },
         {
           "id": 5,
-          "titulo": "Musica #5",
-          "descripcion": "Una pista musical con temática de IA",
+          "titulo": "Voz Clonada",
+          "descripcion": "Voz clonada mediante IA",
           "media": "audio5",
           "mediaType": "audio"
         }
