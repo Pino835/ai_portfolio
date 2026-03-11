@@ -1,8 +1,7 @@
 import styles from './Contacto.module.css';
 import { useState } from 'react';
-import emailjs from 'emailjs-com';
 
-export default function ContactoEmailJSEnv() {
+export default function ContactoMakeFixed() {
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',
@@ -48,27 +47,37 @@ export default function ContactoEmailJSEnv() {
       return;
     }
 
-    // Leer las credenciales de EmailJS desde las variables de entorno
-    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
-    // Validar que las credenciales estén presentes
-    if (!serviceID || !templateID || !publicKey) {
-        console.error('Error: Las credenciales de EmailJS no están configuradas en el archivo .env');
-        alert('Error de configuración del servidor. No se puede enviar el mensaje.');
-        return;
+    const webhookUrl = import.meta.env.VITE_MAKE_WEBHOOK;
+    if (!webhookUrl) {
+      console.error('Error: La URL del webhook de Make no está configurada.');
+      alert('Error de configuración del servidor. No se puede enviar el mensaje.');
+      return;
     }
 
     setCargando(true);
-
     try {
-      await emailjs.sendForm(
-        serviceID,
-        templateID,
-        e.target,
-        publicKey
-      );
+      // EL PROBLEMA: El uso de `mode: 'no-cors'` obliga al navegador a cambiar el
+      // `Content-Type` a `text/plain`, ignorando el `application/json` que especificamos.
+      // Make.com recibe entonces una cadena de texto en lugar de un objeto JSON, y la envuelve
+      // en un único campo `value`.
+
+      // LA SOLUCIÓN: Eliminar `mode: 'no-cors'` para que el navegador envíe correctamente
+      // el `Content-Type: application/json`. Esto permite a Make.com interpretar el cuerpo
+      // de la solicitud como un objeto JSON y separar cada campo en el bundle.
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      // Validamos que la respuesta del servidor sea exitosa (ej. status 200 OK).
+      if (!response.ok) {
+        // Si hay un error en la respuesta del servidor, lo capturamos aquí.
+        throw new Error(`Error del servidor: ${response.status}`);
+      }
+
       setEnviado(true);
       setFormData({
         nombre: '',
@@ -81,8 +90,9 @@ export default function ContactoEmailJSEnv() {
         contactoPor: 'email'
       });
       setTimeout(() => setEnviado(false), 5000);
+
     } catch (error) {
-      console.error('Error al enviar el formulario:', error);
+      console.error('Error al enviar el formulario al webhook:', error);
       setErrorEnvio(true);
       setTimeout(() => setErrorEnvio(false), 5000);
     } finally {
@@ -101,7 +111,7 @@ export default function ContactoEmailJSEnv() {
         {enviado ? (
           <div className={styles.mensajeExito}>
             <h2>¡Gracias por tu mensaje!</h2>
-            <p>Nos pondremos en contacto contigo pronto.</p>
+            <p>Hemos recibido tus datos correctamente.</p>
           </div>
         ) : errorEnvio ? (
           <div className={styles.mensajeError}>
