@@ -22,10 +22,6 @@ jobs:
         working-directory: ./ia_portfolio
         run: npm install
 
-      # --- PASO DE DEPURACIÓN --- 
-      - name: Debug Webhook Secret
-        run: echo "El valor del webhook es '${{ secrets.VITE_MAKE_WEBHOOK }}'"
-
       - name: Build
         working-directory: ./ia_portfolio
         run: npm run build
