@@ -21,6 +21,14 @@ import imagen16 from "../../assets/images/imagen16.jpeg";
 import imagen17 from "../../assets/images/imagen17.jpeg";
 import imagen18 from "../../assets/images/imagen18.jpeg";
 import imagen19 from "../../assets/images/imagen19.jpeg";
+import imagen20 from "../../assets/images/imagen20.png";
+import imagen21 from "../../assets/images/imagen21.png";
+import imagen22 from "../../assets/images/imagen22.png";
+import imagen23 from "../../assets/images/imagen23.jpeg";
+import imagen24 from "../../assets/images/imagen24.jpeg";
+import imagen25 from "../../assets/images/imagen25.png";
+import imagen26 from "../../assets/images/imagen26.png";
+import imagen27 from "../../assets/images/imagen27.png";
 
 // Videos de ejemplo para los proyectos
 import video1 from "../../assets/videos/video1.mp4";
@@ -34,6 +42,7 @@ import video8 from "../../assets/videos/video8.mp4";
 import video9 from "../../assets/videos/video9.mp4";
 import video10 from "../../assets/videos/video10.mp4";
 import video11 from "../../assets/videos/video11.mp4";
+import video12 from "../../assets/videos/video12.mp4";
 
 // Audios de ejemplo para los proyectos
 import audio1 from "../../assets/audios/audio1.mp3";
@@ -54,12 +63,9 @@ import proyectosData from "../../data/proyectos.json";
 export default function Proyectos() {
   const secciones = proyectosData.secciones || [];
   const mediaMap = {
-    imagen1, imagen2, imagen3, imagen4, imagen5, 
-    imagen6, imagen7, imagen8, imagen9, imagen10, 
-    imagen11, imagen12, imagen13, imagen14, imagen15,
-    imagen16, imagen17, imagen18, imagen19,
-    video1, video2, video3, video4, video5, video6, video7, video8, video9, video10,
-    video11,
+    imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7, imagen8, imagen9, imagen10, imagen11, imagen12, imagen13, imagen14, imagen15,
+    imagen16, imagen17, imagen18, imagen19, imagen20, imagen21, imagen22, imagen23, imagen24, imagen25, imagen26, imagen27, 
+    video1, video2, video3, video4, video5, video6, video7, video8, video9, video10, video11, video12,
     audio1, audio2, audio3, audio4, audio5,
     chatbot1,
     tool1

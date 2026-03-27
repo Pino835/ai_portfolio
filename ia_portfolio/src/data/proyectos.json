@@ -136,6 +136,62 @@
           "descripcion": "Una imagen de un hombre muppet generado por IA",
           "media": "imagen19",
           "mediaType": "image"
+        },
+        {
+          "id": 20,
+          "titulo": "Fotografía de exhibición de barbería",
+          "descripcion": "Una imagen de una exhibición de barbería generada por IA",
+          "media": "imagen20",
+          "mediaType": "image"
+        },
+        {
+          "id": 21,
+          "titulo": "Moto de Luz Verde",
+          "descripcion": "Una imagen de una moto de luz verde generada por IA",
+          "media": "imagen21",
+          "mediaType": "image"
+        },
+        {
+          "id": 22,
+          "titulo": "Moto de Luz Verde con Piloto",
+          "descripcion": "Una imagen de una moto de luz verde con piloto generada por IA",
+          "media": "imagen22",
+          "mediaType": "image"
+        },
+        {
+          "id": 23,
+          "titulo": "Jugador de fútbol #1",
+          "descripcion": "Una imagen de un jugador de fútbol generado por IA",
+          "media": "imagen23",
+          "mediaType": "image"
+        },
+        {
+          "id": 24,
+          "titulo": "Jugador de fútbol #2",
+          "descripcion": "Una imagen de un jugador de fútbol generado por IA",
+          "media": "imagen24",
+          "mediaType": "image"
+        },
+        {
+          "id": 25,
+          "titulo": "Foto con Young Miko",
+          "descripcion": "Una imagen de Young Miko generado por IA",
+          "media": "imagen25",
+          "mediaType": "image"
+        },
+        {
+          "id": 26,
+          "titulo": "Pareja ideal generada por IA",
+          "descripcion": "Una imagen de una pareja ideal generada por IA",
+          "media": "imagen26",
+          "mediaType": "image"
+        },
+        {
+          "id": 27,
+          "titulo": "Foto con Rauw Alejandro",
+          "descripcion": "Una imagen de Rauw Alejandro generado por IA",
+          "media": "imagen27",
+          "mediaType": "image"
         }
       ]
     },
@@ -218,6 +274,13 @@
             "titulo": "Producto de barbería #2",
             "descripcion": "Un video de un producto de barbería, generado por IA",
             "media": "video11",
+            "mediaType": "video"
+          },
+          {
+            "id": 12,
+            "titulo": "Moto de Luz Verde con Piloto",
+            "descripcion": "Un video de una moto de luz verde con piloto, generado por IA",
+            "media": "video12",
             "mediaType": "video"
           }
       ]
