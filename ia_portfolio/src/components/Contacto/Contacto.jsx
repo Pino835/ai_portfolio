@@ -19,14 +19,10 @@ export default function ContactoMakeFixed() {
 
   const servicios = [
     'Selecciona un servicio',
-    'Generador de Contenido IA',
-    'Chatbot para Pymes',
-    'Análisis de Datos IA',
-    'Optimización de Procesos',
-    'Marketing Automatizado',
-    'Predicción de Ventas',
-    'Deteción de Fraudes',
-    'Segmentación de Clientes',
+    'Generación de Contenido Audiovisual',
+    'Generación de Páginas o Sitios web',
+    'Generación de ChatBots y Agentes GPT',
+    'Generación de Automatizaciones a medida',
     'Otro'
   ];
 

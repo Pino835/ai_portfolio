@@ -8,31 +8,31 @@ export default function Servicios() {
   const servicios = [
     {
       id: 1,
-      titulo: "Inicio",
-      descripcion: "Perfecto para empezar con la automatización básica y contenido con IA generativo",
+      titulo: "Generación de Contenido Audiovisual con IA",
+      descripcion: "Perfecto para mejorar su presencia online con contenido visual atractivo",
       imagen: imagen1,
-      caracteristicas: ["Chatbot básico", "1 campaña mensual", "Soporte por email"]
+      caracteristicas: ["Texto", "Imágenes", "Videos", "Audios"]
     },
     {
       id: 2,
-      titulo: "Profesional",
-      descripcion: "Ideal para pymes que buscan automatizar procesos y marketing con IA avanzada",
+      titulo: "Generación de Páginas o Sitios web con IA",
+      descripcion: "Ideal para crear o mejorar tu sitio web con diseño moderno y funcional",
       imagen: imagen2,
-      caracteristicas: ["Chatbot avanzado", "4 campañas mensuales", "Soporte prioritario"]
+      caracteristicas: ["Diseño moderno", "Responsive", "Optimización SEO"]
     },
     {
       id: 3,
-      titulo: "Empresarial",
-      descripcion: "Solución completa con análisis de datos y automatización personalizada",
+      titulo: "Generación de ChatBots y Agentes GPT con IA",
+      descripcion: "Perfecto para mejorar la atención al cliente y automatizar respuestas con chatbots inteligentes",
       imagen: imagen3,
-      caracteristicas: ["Chatbot personalizado", "Campañas ilimitadas", "Análisis de datos"]
+      caracteristicas: ["Chatbot personalizado", "Integración con plataformas", "Análisis de conversaciones"]
     },
     {
       id: 4,
-      titulo: "Personalizado",
-      descripcion: "Plan a medida según tus necesidades específicas con integraciones personalizadas",
+      titulo: "Generación de Automatizaciones a medida con IA",
+      descripcion: "Ideal para optimizar procesos internos y mejorar la eficiencia con soluciones de automatización personalizadas",
       imagen: imagen4,
-      caracteristicas: ["Solución a medida", "Integraciones custom", "Soporte 24/7"]
+      caracteristicas: ["Solución a medida", "Integraciones custom"]
     }
   ];
 
