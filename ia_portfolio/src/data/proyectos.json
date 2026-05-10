@@ -192,6 +192,13 @@
           "descripcion": "Una imagen de Rauw Alejandro generado por IA",
           "media": "imagen27",
           "mediaType": "image"
+        },
+        {
+          "id": 28,
+          "titulo": "Caricatura",
+          "descripcion": "Una caricatura generada por IA",
+          "media": "imagen28",
+          "mediaType": "image"
         }
       ]
     },
@@ -282,6 +289,13 @@
             "descripcion": "Un video de una moto de luz verde con piloto, generado por IA",
             "media": "video12",
             "mediaType": "video"
+          },
+          {
+            "id": 13,
+            "titulo": "Caricatura",
+            "descripcion": "Un video de una caricatura, generado por IA",
+            "media": "video13",
+            "mediaType": "video"
           }
       ]
     },
@@ -323,6 +337,27 @@
           "descripcion": "Voz clonada mediante IA",
           "media": "audio5",
           "mediaType": "audio"
+        },
+        {
+          "id": 6,
+          "titulo": "Música #5",
+          "descripcion": "Una pista musical de hip hop relajante generada por IA",
+          "media": "audio6",
+          "mediaType": "audio"
+        },
+        {
+          "id": 7,
+          "titulo": "Música #6",
+          "descripcion": "Una pista musical de hip hop relajante generada por IA",
+          "media": "audio7",
+          "mediaType": "audio"
+        },
+        {
+          "id": 8,
+          "titulo": "Música #7",
+          "descripcion": "Una pista musical de hip hop relajante generada por IA",
+          "media": "audio8",
+          "mediaType": "audio"
         }
       ]
     },
@@ -349,7 +384,15 @@
           "descripcion": "Asistente conversacional inteligente para búsqueda de empleo, que ayuda a los usuarios a encontrar oportunidades laborales y preparar sus solicitudes",
           "media": "tool1",
           "mediaType": "image"
+        },
+        {
+          "id": 2,
+          "titulo": "Automatización",
+          "descripcion": "GESTIÓN DE CONSULTAS DESDE DESDE WEB AL CORREO",
+          "media": "tool2",
+          "mediaType": "image"
         }
+
       ]
     }
   ]
