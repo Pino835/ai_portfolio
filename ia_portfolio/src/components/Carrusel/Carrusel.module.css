@@ -1,0 +1,71 @@
+.carouselSection {
+  padding: 2.5rem 1.5rem;
+  background: #1a1a1a;  /* fondo negro/gris oscuro */
+}
+
+.carouselLabel {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #aaaaaa;  /* gris claro */
+  margin-bottom: 1.5rem;
+}
+
+.carouselWrapper {
+  overflow: hidden;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.carouselTrack {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: scroll-left 28s linear infinite;
+}
+
+.carouselTrack:hover {
+  animation-play-state: paused;
+}
+
+.toolCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: #2b2b2b;
+  border: 1px solid #3a3a3a;
+  border-radius: 12px;
+  padding: 16px 20px;
+  width: 110px;
+  flex-shrink: 0;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.toolCard:hover {
+  border-color: #666;
+  background: #333;
+}
+
+.toolLogo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: invert(1) brightness(1.8);  /* invierte los logos a blanco */
+}
+
+.toolName {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
