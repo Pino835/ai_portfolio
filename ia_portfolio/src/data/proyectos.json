@@ -199,6 +199,111 @@
           "descripcion": "Una caricatura generada por IA",
           "media": "imagen28",
           "mediaType": "image"
+        },
+        {
+          "id": 29,
+          "titulo": "Viltrumita",
+          "descripcion": "Una imagen de un viltrumita generado por IA",
+          "media": "imagen29",
+          "mediaType": "image"
+        },
+        {
+          "id": 30,
+          "titulo": "Audi r8",
+          "descripcion": "Una imagen de un Audi r8 generado por IA",
+          "media": "imagen30",
+          "mediaType": "image"
+        },
+        {
+          "id": 31,
+          "titulo": "Lamborghini",
+          "descripcion": "Una imagen de un Lamborghini generado por IA",
+          "media": "imagen31",
+          "mediaType": "image"
+        },
+        {
+          "id": 32,
+          "titulo": "Porsche",
+          "descripcion": "Una imagen de un Porsche generado por IA",
+          "media": "imagen32",
+          "mediaType": "image"
+        },
+        {
+          "id": 33,
+          "titulo": "Ciudad futurista",
+          "descripcion": "Una imagen de una ciudad futurista generada por IA",
+          "media": "imagen33",
+          "mediaType": "image"
+        },
+        {
+          "id": 34,
+          "titulo": "Hamburguesas",
+          "descripcion": "Una imagen de hamburguesas generada por IA",
+          "media": "imagen34",
+          "mediaType": "image"
+        },
+        {
+          "id": 35,
+          "titulo": "Gym #1",
+          "descripcion": "Una imagen de un gimnasio generado por IA",
+          "media": "imagen35",
+          "mediaType": "image"
+        },
+        {
+          "id": 36,
+          "titulo": "Gym #2",
+          "descripcion": "Una imagen de un gimnasio generado por IA",
+          "media": "imagen36",
+          "mediaType": "image"
+        },
+        {
+          "id": 37,
+          "titulo": "Inosuke Hashibira",
+          "descripcion": "Una imagen de Inosuke Hashibira generado por IA",
+          "media": "imagen37",
+          "mediaType": "image"
+        },
+        {
+          "id": 38,
+          "titulo": "Lego",
+          "descripcion": "Una imagen de un conjunto de Lego generado por IA",
+          "media": "imagen38",
+          "mediaType": "image"
+        },
+        {
+          "id": 39,
+          "titulo": "Motocicleta en la noche",
+          "descripcion": "Una imagen de una motocicleta en la noche generada por IA",
+          "media": "imagen39",
+          "mediaType": "image"
+        },
+        {
+          "id": 40,
+          "titulo": "Samurai",
+          "descripcion": "Una imagen de un samurai generado por IA",
+          "media": "imagen40",
+          "mediaType": "image"
+        },
+        {
+          "id": 41,
+          "titulo": "Skincare",
+          "descripcion": "Una imagen de producto de skincare generada por IA",
+          "media": "imagen41",
+          "mediaType": "image"
+        },
+        {
+          "id": 42,
+          "titulo": "Mono y Six",
+          "descripcion": "Una imagen de Mono y Six generado por IA",
+          "media": "imagen42",
+          "mediaType": "image"
+        },
+        {
+          "id": 43,
+          "titulo": "Vikingo",
+          "descripcion": "Una imagen de un vikingo generado por IA",
+          "media": "imagen43",
+          "mediaType": "image"
         }
       ]
     },
@@ -295,6 +400,13 @@
             "titulo": "Caricatura",
             "descripcion": "Un video de una caricatura, generado por IA",
             "media": "video13",
+            "mediaType": "video"
+          },
+          {
+            "id": 14,
+            "titulo": "Ciudad futurista",
+            "descripcion": "Un video de una ciudad futurista, generado por IA",
+            "media": "video14",
             "mediaType": "video"
           }
       ]

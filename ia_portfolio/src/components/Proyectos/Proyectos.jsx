@@ -31,6 +31,20 @@ import imagen26 from "../../assets/images/imagen26.png";
 import imagen27 from "../../assets/images/imagen27.png";
 import imagen28 from "../../assets/images/imagen28.png";
 import imagen29 from "../../assets/images/imagen29.png";
+import imagen30 from "../../assets/images/imagen30.png";
+import imagen31 from "../../assets/images/imagen31.png";
+import imagen32 from "../../assets/images/imagen32.png";
+import imagen33 from "../../assets/images/imagen33.png";
+import imagen34 from "../../assets/images/imagen34.png";
+import imagen35 from "../../assets/images/imagen35.png";
+import imagen36 from "../../assets/images/imagen36.png";
+import imagen37 from "../../assets/images/imagen37.png";
+import imagen38 from "../../assets/images/imagen38.png";
+import imagen39 from "../../assets/images/imagen39.png";
+import imagen40 from "../../assets/images/imagen40.png";
+import imagen41 from "../../assets/images/imagen41.png";
+import imagen42 from "../../assets/images/imagen42.png";
+import imagen43 from "../../assets/images/imagen43.png";
 
 // Videos de ejemplo para los proyectos
 import video1 from "../../assets/videos/video1.mp4";
@@ -46,6 +60,7 @@ import video10 from "../../assets/videos/video10.mp4";
 import video11 from "../../assets/videos/video11.mp4";
 import video12 from "../../assets/videos/video12.mp4";
 import video13 from "../../assets/videos/video13.mp4";
+import video14 from "../../assets/videos/video14.mp4";
 
 // Audios de ejemplo para los proyectos
 import audio1 from "../../assets/audios/audio1.mp3";
@@ -71,8 +86,9 @@ export default function Proyectos() {
   const secciones = proyectosData.secciones || [];
   const mediaMap = {
     imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7, imagen8, imagen9, imagen10, imagen11, imagen12, imagen13, imagen14, imagen15,
-    imagen16, imagen17, imagen18, imagen19, imagen20, imagen21, imagen22, imagen23, imagen24, imagen25, imagen26, imagen27, imagen28, imagen29,
-    video1, video2, video3, video4, video5, video6, video7, video8, video9, video10, video11, video12, video13,
+    imagen16, imagen17, imagen18, imagen19, imagen20, imagen21, imagen22, imagen23, imagen24, imagen25, imagen26, imagen27, imagen28, imagen29, imagen30,
+    imagen31, imagen32, imagen33, imagen34, imagen35, imagen36, imagen37, imagen38, imagen39, imagen40, imagen41, imagen42, imagen43,
+    video1, video2, video3, video4, video5, video6, video7, video8, video9, video10, video11, video12, video13, video14,
     audio1, audio2, audio3, audio4, audio5, audio6, audio7, audio8,
     chatbot1,
     tool1, tool2
