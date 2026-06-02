@@ -78,6 +78,7 @@ import chatbot1 from "../../assets/chatbots/chatbot1.png";
 // Otras herramientas de ejemplo para los proyectos
 import tool1 from "../../assets/tools/tool1.png";
 import tool2 from "../../assets/tools/tool2.png";
+import tool3 from "../../assets/tools/tool3.png";
 
 // Datos externos (JSON)
 import proyectosData from "../../data/proyectos.json";
@@ -91,7 +92,7 @@ export default function Proyectos() {
     video1, video2, video3, video4, video5, video6, video7, video8, video9, video10, video11, video12, video13, video14,
     audio1, audio2, audio3, audio4, audio5, audio6, audio7, audio8,
     chatbot1,
-    tool1, tool2
+    tool1, tool2, tool3
   };
 
   // Modal state

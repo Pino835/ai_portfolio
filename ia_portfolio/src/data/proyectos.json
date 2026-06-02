@@ -504,7 +504,14 @@
           "media": "tool2",
           "mediaType": "image"
         }
-
+        ,
+        {
+          "id": 3,
+          "titulo": "Página web",
+          "descripcion": "Página web de portafolio personal creada con Manus AI",
+          "media": "tool3",
+          "mediaType": "image"
+        }
       ]
     }
   ]
