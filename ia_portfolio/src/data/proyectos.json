@@ -304,6 +304,20 @@
           "descripcion": "Una imagen de un vikingo generado por IA",
           "media": "imagen43",
           "mediaType": "image"
+        },
+        {
+          "id": 44,
+          "titulo": "Fotografía profesional a modelo #1",
+          "descripcion": "Una imagen de una fotografía profesional a modelo generada por IA",
+          "media": "imagen44",
+          "mediaType": "image"
+        },
+        {
+          "id": 45,
+          "titulo": "Fotografía profesional a modelo #2",
+          "descripcion": "Una imagen de una fotografía profesional a modelo generada por IA",
+          "media": "imagen45",
+          "mediaType": "image"
         }
       ]
     },
