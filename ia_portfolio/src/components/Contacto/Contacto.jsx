@@ -16,6 +16,10 @@ export default function ContactoMakeFixed() {
   const [enviado, setEnviado] = useState(false);
   const [errorEnvio, setErrorEnvio] = useState(false);
   const [cargando, setCargando] = useState(false);
+  const [errores, setErrores] = useState({});
+
+  const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const TELEFONO_REGEX = /^[+\d][\d\s()-]{6,}$/;
 
   const servicios = [
     'Selecciona un servicio',
@@ -32,14 +36,45 @@ export default function ContactoMakeFixed() {
       ...prev,
       [name]: value
     }));
+    setErrores((prev) => {
+      if (!prev[name]) return prev;
+      const { [name]: _omitido, ...resto } = prev;
+      return resto;
+    });
+  };
+
+  const validar = () => {
+    const nuevosErrores = {};
+
+    if (!formData.nombre.trim()) {
+      nuevosErrores.nombre = 'El nombre es requerido';
+    }
+    if (!formData.email.trim()) {
+      nuevosErrores.email = 'El correo es requerido';
+    } else if (!EMAIL_REGEX.test(formData.email.trim())) {
+      nuevosErrores.email = 'Ingresa un correo válido';
+    }
+    if (!formData.telefono.trim()) {
+      nuevosErrores.telefono = 'El teléfono es requerido';
+    } else if (!TELEFONO_REGEX.test(formData.telefono.trim())) {
+      nuevosErrores.telefono = 'Ingresa un teléfono válido';
+    }
+    if (!formData.servicio || formData.servicio === 'Selecciona un servicio') {
+      nuevosErrores.servicio = 'Selecciona un servicio';
+    }
+    if (!formData.mensaje.trim()) {
+      nuevosErrores.mensaje = 'Cuéntanos qué necesitas';
+    }
+
+    setErrores(nuevosErrores);
+    return Object.keys(nuevosErrores).length === 0;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setErrorEnvio(false);
 
-    if (!formData.nombre || !formData.email || !formData.telefono || !formData.servicio || formData.servicio === 'Selecciona un servicio' || !formData.mensaje) {
-      alert('Por favor completa todos los campos requeridos');
+    if (!validar()) {
       return;
     }
 
@@ -127,8 +162,9 @@ export default function ContactoMakeFixed() {
                   value={formData.nombre}
                   onChange={handleChange}
                   placeholder="Tu nombre completo"
-                  required
+                  aria-invalid={Boolean(errores.nombre)}
                 />
+                {errores.nombre && <span className={styles.errorCampo}>{errores.nombre}</span>}
               </div>
               <div className={styles.grupoFormulario}>
                 <label htmlFor="email">Correo Electrónico *</label>
@@ -139,8 +175,9 @@ export default function ContactoMakeFixed() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="tu@email.com"
-                  required
+                  aria-invalid={Boolean(errores.email)}
                 />
+                {errores.email && <span className={styles.errorCampo}>{errores.email}</span>}
               </div>
             </div>
 
@@ -154,8 +191,9 @@ export default function ContactoMakeFixed() {
                   value={formData.telefono}
                   onChange={handleChange}
                   placeholder="+34 123 456 789"
-                  required
+                  aria-invalid={Boolean(errores.telefono)}
                 />
+                {errores.telefono && <span className={styles.errorCampo}>{errores.telefono}</span>}
               </div>
               <div className={styles.grupoFormulario}>
                 <label htmlFor="empresa">Empresa (Opcional)</label>
@@ -178,7 +216,7 @@ export default function ContactoMakeFixed() {
                   name="servicio"
                   value={formData.servicio}
                   onChange={handleChange}
-                  required
+                  aria-invalid={Boolean(errores.servicio)}
                 >
                   {servicios.map((servicio, index) => (
                     <option key={index} value={servicio}>
@@ -186,6 +224,7 @@ export default function ContactoMakeFixed() {
                     </option>
                   ))}
                 </select>
+                {errores.servicio && <span className={styles.errorCampo}>{errores.servicio}</span>}
               </div>
               <div className={styles.grupoFormulario}>
                 <label htmlFor="contactoPor">Preferencia de Contacto</label>
@@ -223,8 +262,9 @@ export default function ContactoMakeFixed() {
                 onChange={handleChange}
                 placeholder="Cuéntanos en detalle qué necesitas..."
                 rows="6"
-                required
+                aria-invalid={Boolean(errores.mensaje)}
               />
+              {errores.mensaje && <span className={styles.errorCampo}>{errores.mensaje}</span>}
             </div>
 
             <button type="submit" className={styles.botonEnviar} disabled={cargando}>

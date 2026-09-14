@@ -46,7 +46,7 @@ export default function Servicios() {
       <div className={styles.gridServicios}>
         {servicios.map((servicio) => (
           <div key={servicio.id} className={styles.servicioCard}>
-            <img src={servicio.imagen} alt={servicio.titulo} className={styles.servicioImagen} />
+            <img src={servicio.imagen} alt={servicio.titulo} className={styles.servicioImagen} loading="lazy" decoding="async" />
             <div className={styles.servicioCardContent}>
               <h3 className={styles.servicioCardTitulo}>{servicio.titulo}</h3>
               <p className={styles.servicioCardDescripcion}>{servicio.descripcion}</p>

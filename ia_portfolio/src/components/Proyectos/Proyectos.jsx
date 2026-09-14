@@ -160,11 +160,11 @@ export default function Proyectos() {
                     >
                       {(() => {
                         if (proyecto.mediaType === "video") {
-                          return <video src={mediaSrc} className={styles.cardImagen} controls />;
+                          return <video src={mediaSrc} className={styles.cardImagen} controls preload="none" />;
                         } else if (proyecto.mediaType === "audio") {
-                          return <audio src={mediaSrc} controls />;
+                          return <audio src={mediaSrc} controls preload="none" />;
                         }
-                        return <img src={mediaSrc} alt={proyecto.titulo} className={styles.cardImagen} />;
+                        return <img src={mediaSrc} alt={proyecto.titulo} className={styles.cardImagen} loading="lazy" decoding="async" />;
                       })()}
                       <div className={styles.cardContent}>
                         <h3 className={styles.cardTitulo}>{proyecto.titulo}</h3>

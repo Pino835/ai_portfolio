@@ -79,6 +79,18 @@
     box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
 }
 
+.grupoFormulario input[aria-invalid="true"],
+.grupoFormulario select[aria-invalid="true"],
+.grupoFormulario textarea[aria-invalid="true"] {
+    border-color: #e74c3c;
+}
+
+.errorCampo {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: 6px;
+}
+
 .grupoFormulario input::placeholder,
 .grupoFormulario textarea::placeholder {
     color: #999;
@@ -129,6 +141,27 @@
 }
 
 .mensajeExito p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+.mensajeError {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 60px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: slideIn 0.5s ease;
+}
+
+.mensajeError h2 {
+    font-size: 2rem;
+    color: #e74c3c;
+    margin: 0 0 20px 0;
+}
+
+.mensajeError p {
     font-size: 1.1rem;
     color: #666;
     margin: 0;
