@@ -63,6 +63,7 @@ import video11 from "../../assets/videos/video11.mp4";
 import video12 from "../../assets/videos/video12.mp4";
 import video13 from "../../assets/videos/video13.mp4";
 import video14 from "../../assets/videos/video14.mp4";
+import video15 from "../../assets/videos/video15.mp4";
 
 // Audios de ejemplo para los proyectos
 import audio1 from "../../assets/audios/audio1.mp3";
@@ -86,16 +87,23 @@ import tool3 from "../../assets/tools/tool3.png";
 import proyectosData from "../../data/proyectos.json";
 
 export default function Proyectos() {
-  const secciones = proyectosData.secciones || [];
+  const secciones = (proyectosData.secciones || []).map((seccion) => ({
+    ...seccion,
+    items: seccion.items.filter((item) => !item.oculto),
+  }));
   const mediaMap = {
     imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7, imagen8, imagen9, imagen10, imagen11, imagen12, imagen13, imagen14, imagen15,
     imagen16, imagen17, imagen18, imagen19, imagen20, imagen21, imagen22, imagen23, imagen24, imagen25, imagen26, imagen27, imagen28, imagen29, imagen30,
     imagen31, imagen32, imagen33, imagen34, imagen35, imagen36, imagen37, imagen38, imagen39, imagen40, imagen41, imagen42, imagen43, imagen44, imagen45,
-    video1, video2, video3, video4, video5, video6, video7, video8, video9, video10, video11, video12, video13, video14,
+    video1, video2, video3, video4, video5, video6, video7, video8, video9, video10, video11, video12, video13, video14, video15,
     audio1, audio2, audio3, audio4, audio5, audio6, audio7, audio8,
     chatbot1,
     tool1, tool2, tool3
   };
+
+  const [filtro, setFiltro] = React.useState("todos");
+  const seccionesVisibles =
+    filtro === "todos" ? secciones : secciones.filter((seccion) => seccion.id === filtro);
 
   // Modal state
   const [modalOpen, setModalOpen] = React.useState(false);
@@ -134,7 +142,22 @@ export default function Proyectos() {
           <p className={styles.proyectoDescript}>Automatización y contenido con IA para pymes.</p>
         </div>
 
-        {secciones.map((seccion) => (
+        <div className={styles.filtros} role="tablist" aria-label="Filtrar proyectos por tipo">
+          {[{ id: "todos", titulo: "Todos" }, ...secciones].map((opcion) => (
+            <button
+              key={opcion.id}
+              type="button"
+              role="tab"
+              aria-selected={filtro === opcion.id}
+              className={`${styles.filtroBtn} ${filtro === opcion.id ? styles.filtroActivo : ""}`}
+              onClick={() => setFiltro(opcion.id)}
+            >
+              {opcion.titulo}
+            </button>
+          ))}
+        </div>
+
+        {seccionesVisibles.map((seccion) => (
           <div key={seccion.id} className={styles.sectionWrapper}>
             <h2 className={styles.sectionTitle}>{seccion.titulo}</h2>
             {seccion.items.length === 0 ? (
@@ -160,7 +183,7 @@ export default function Proyectos() {
                     >
                       {(() => {
                         if (proyecto.mediaType === "video") {
-                          return <video src={mediaSrc} className={styles.cardImagen} controls preload="none" />;
+                          return <video src={`${mediaSrc}#t=0.1`} className={styles.cardImagen} controls preload="metadata" />;
                         } else if (proyecto.mediaType === "audio") {
                           return <audio src={mediaSrc} controls preload="none" />;
                         }

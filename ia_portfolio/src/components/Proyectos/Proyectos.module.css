@@ -110,6 +110,43 @@
     }
 }
 
+/* Filtros por tipo de proyecto */
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    max-width: 1400px;
+    margin: 0 auto 20px;
+}
+
+.filtroBtn {
+    background: rgba(49, 48, 100, 0.6);
+    color: #e0e0e0;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 999px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.filtroBtn:hover {
+    background: rgba(49, 48, 100, 0.95);
+    transform: translateY(-2px);
+}
+
+.filtroActivo {
+    background: white;
+    color: rgb(49, 48, 100);
+    border-color: white;
+}
+
+.filtroActivo:hover {
+    background: white;
+}
+
 /* Nuevos estilos para secciones */
 .sectionWrapper {
     max-width: 1400px;
